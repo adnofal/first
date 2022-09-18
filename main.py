@@ -1,17 +1,14 @@
-name = input("add your name:")
+first_number = int(input("inter the first number:"))
 
-if name.isdigit() or name ==" ":
-    print(" inter true information!")
-    exit()
+second_number = int(input("inter the second number:"))
 
-age = input("add your age:")
-if age.isdigit():
-    age = int(age)
-else:
-    print("inter true information!")
-    exit()
+third_number = int(input("inter the third number:"))
 
-address = input("add your address:")
+fourth_number = int(input("inter the fourth number:"))
 
-if type(name) is str and type(age) is int and type(address) is str:
-    print(f" Hello {name} age {age} located in {address} wlecome to our community, Enjoy!")
+fifth_number = int(input("inter the fifth number:"))
+
+list = [first_number, second_number , third_number , fourth_number , fifth_number]
+
+print(max(list))
+print(min(list))
