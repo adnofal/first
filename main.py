@@ -1,50 +1,17 @@
-import math
+list1 = []
 
-number1 = input(" Enter the first number:")
-if number1.isalpha() or number1 == " ":
-    print(" you should inter true value")
-    exit()
+for x in range(5):
+    number1= input("enter the number:\n")
+    list1.append(float(number1))
 
-print('_____________________')
-print("1. + \n2. - \n3. * \n4. / \n5. ^ \n6. % ")
-operation = input(" Enter the operation: \n")
+min = list1[0]
+max = 0
 
-number2 = input(" Enter the second number:\n")
+for item in list1:
+    if item < min:
+        min = item
+    elif item > max :
+        max = item
 
-if operation == "1" or operation == '+':
-    sum = float(number1) + float(number2)
-    print(f"The result is {sum}")
-
-if operation == "2" or operation == "-":
-    sum = float(number1) - float(number2)
-    print(f"the result is {sum}")
-
-if operation == "3" or operation == "*":
-    sum = float(number1) * float(number2)
-    print(f"the result is {sum}")
-
-if operation == "4" or operation == "/":
-    sum = float(number1) / float(number2)
-    print(f"the result is {sum}")
-
-if operation == "5" or operation == "^":
-    sum = float(number1) ^ float(number2)
-    print(f"the result is {sum}")
-
-if operation == "6" or operation == "%":
-    sum = float(number1) % float(number2)
-    print(f"the result is {sum}")
-
-print("__________________")
-op = input("1.Round \n2.Floor \n3.Ceil \n4.Integer \n5.Exit \nEnter the operation for result:")
-if op == "1":
-    print(f" the final result is {round(sum)}")
-elif op == "2":
-    print(f"the final result is {math.floor(sum)} ")
-elif op == "3":
-    print(f"the final result is {math.ceil(sum)}")
-elif op == "4":
-    print(f"the final result is {int(sum)}")
-elif op == "5":
-    print(sum)
-    exit()
+print(max)
+print(min)
