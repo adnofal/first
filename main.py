@@ -1,14 +1,40 @@
-first_number = int(input("inter the first number:"))
+first = (input("inter the first number:"))
+if first.isdigit():
+    first = int(first)
+else:
+    print(" inter true values!")
+    exit()
 
-second_number = int(input("inter the second number:"))
+second = (input("inter the second number:"))
+if second.isdigit():
+    second= int(second)
+else:
+    print(" inter true values!")
+    exit()
 
-third_number = int(input("inter the third number:"))
+third = (input("inter the third number:"))
+if third.isdigit():
+    third = int(third)
+else:
+    print(" inter true values!")
+    exit()
 
-fourth_number = int(input("inter the fourth number:"))
+fourth = (input("inter the fourth number:"))
+if fourth.isdigit():
+    fourth = int(fourth)
+else:
+    print(" inter true values!")
+    exit()
 
-fifth_number = int(input("inter the fifth number:"))
+fifth = (input("inter the fifth number:"))
+if fifth.isdigit():
+    fifth = int(fifth)
+else:
+    print(" inter true values!")
+    exit()
 
-list = [first_number, second_number , third_number , fourth_number , fifth_number]
 
+list = [first, second , third , fourth , fifth]
 print(max(list))
 print(min(list))
+
