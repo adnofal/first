@@ -1,17 +1,12 @@
-list1 = []
+numbers = [12 , 75 , 150 , 180 , 145 , 525 , 50 ]
 
-for x in range(5):
-    number1= input("enter the number:\n")
-    list1.append(float(number1))
 
-min = list1[0]
-max = 0
+result_numbers = []
+for item in numbers:
+    if item > 500:
+        break
 
-for item in list1:
-    if item < min:
-        min = item
-    elif item > max :
-        max = item
+    if item % 5 ==0 and item <= 150:
+        result_numbers.append(item)
 
-print(max)
-print(min)
+print(result_numbers)
