@@ -1,7 +1,7 @@
-sample_set = {"Yellow", "Orange", "Black"}
-sample_list = ["Blue", "Green", "Red"]
+set1 = {10, 20, 30, 40, 50}
 
+set2 = {30, 40, 50, 60, 70}
 
-sample_set.update(sample_list)
+result = set1.intersection(set2)
 
-print(sample_set)
+print(result)
