@@ -1,7 +1,14 @@
-tuple_1 = ("Orange", [10, 20, 30], (5, 15, 25))
+tuple1 = (10, 20, 30, 40)
 
-result1 = tuple_1[1]
+a = tuple1[0]
 
-result2 = result1[1]
+b = tuple1[1]
 
-print(result2)
+c = tuple1[2]
+
+d = tuple1[3]
+
+print(a)
+print(b)
+print(c)
+print(d)
