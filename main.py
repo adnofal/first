@@ -1,5 +1,7 @@
-tuple1 = (10, 20, 30, 40, 50)
+tuple_1 = ("Orange", [10, 20, 30], (5, 15, 25))
 
-tuple2 = tuple(reversed(tuple1))
+result1 = tuple_1[1]
 
-print(tuple2)
+result2 = result1[1]
+
+print(result2)
