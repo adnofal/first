@@ -1,6 +1,7 @@
-simple_dict = {"name": "Kelly", "age": 25, "salary": 8000, "city": "New york"}
+sample_set = {"Yellow", "Orange", "Black"}
+sample_list = ["Blue", "Green", "Red"]
 
-simple_dict.pop("name")
-simple_dict.pop("salary")
 
-print(simple_dict)
+sample_set.update(sample_list)
+
+print(sample_set)
