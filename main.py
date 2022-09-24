@@ -1,10 +1,6 @@
-num = 76542
+keys = [" Ten", "Twenty", "Thirty"]
+values = [10, 20, 30]
 
-reversed_num = 0
+dictionary = dict(zip(keys, values))
+print(dictionary)
 
-while num !=0:
-    digit =  num % 10
-    reversed_num = reversed_num * 10 +digit
-    num //= 10
-
-print(f"Reversed Number : {str(reversed_num)} " )
