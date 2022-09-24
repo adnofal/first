@@ -1,6 +1,6 @@
-keys = [" Ten", "Twenty", "Thirty"]
-values = [10, 20, 30]
+simple_dict = {"name": "Kelly", "age": 25, "salary": 8000, "city": "New york"}
 
-dictionary = dict(zip(keys, values))
-print(dictionary)
+simple_dict.pop("name")
+simple_dict.pop("salary")
 
+print(simple_dict)
