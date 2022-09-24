@@ -1,7 +1,10 @@
-i = []
+num = 76542
 
+reversed_num = 0
 
-for i in range(5):
-    print(i)
+while num !=0:
+    digit =  num % 10
+    reversed_num = reversed_num * 10 +digit
+    num //= 10
 
-print("Done!")
+print(f"Reversed Number : {str(reversed_num)} " )
